@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --purple: #8e7bef;
+    --blue: #5d3bef;
+    --bone: #f9f6ff;
+    --black: #222222;
+    --grey: #423F40;
+    --white: #ffffff;
+    --cake: #f9f5f2;
+    --midPurple: #f9f6ff;
+    --semiGrey: #b6b6b6;  
+    --almostGrey:#919191;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    }
+
+    .header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .nav{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 1rem;
+        height: 3rem;
+        background-color: white;
+    }
+
+    .nav_menu{
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        column-gap: 1rem;
+    }
+
+    .nav_items{
+        color: var(--purple);
+        list-style: none;
+    }
+
+    .nav_links{
+        color: var(--grey);
+        text-decoration: none;
+    }
+
+
+    .nav_links:hover{
+        color: var(--purple);
+    }
+
+
+
+
+
+.contenedor_background{
+    width: 75%;
+    max-width: 500px;
+    height: 45%;
+    max-height: 398px;
+    background-color: transparent;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    right: 1%;
+  }
+  .barra-cont{
+    display: flex;
+  }
+  .barra{
+    height: 35px;
+    background-color: rgb(205, 171, 248);
+    border-radius: 1.5rem;
+    width: 200px;
+    transform: rotate(154deg);
+    opacity: 0.5;
+  }
+  .n1{
+    width: 100px;
+  }
+  .n2{
+    width: 70px;
+  }
+  .n3{
+    width: 200px;
+  }
+  .n4{
+    width: 65px;
+  }
+
+  .hamburguesa{
+    display: none;
+    }
+
+  .container1{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    margin: 1rem;
+    column-gap: 2rem;
+    align-items: center;
+    }
+
+  .description{
+    height: 60vh;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    }
+
+  .redes{
+    display: flex;
+    justify-content: space-evenly;
+    width: 55%;
+    margin: 1.5rem auto;
+    }
+
+  .redes .icon{
+    border-radius: 50%;
+    background-color: var(--purple);
+    padding: 0.5rem;
+    }
+
+  .boton{
+    display: flex;
+    background-color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 50%;
+    margin: 2rem auto;
+    }
+
+  .boton a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    padding: 1rem 0rem;
+    max-width: 90vw;   
+    }
+
+  .foto{
+    position: static;
+    object-fit: cover;
+    }
+
+  .formita{
+    position: relative;
+    }
+
+  h2{
+    margin: 1rem;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 4rem;
+    scroll-margin-top: 3rem;
+    }
+  
+  .acerca_de_mi{
+    text-align: justify;
+    margin: 1rem;
+    color: var(--grey);
+    font-size: 16px;
+    }
+
+    .mis_habilidades{
+        display: flex;
+        margin: 1rem;
+        columns: 3;
+        column-gap: 4rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .mis_habilidades h3{
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600px;
+        margin-top: 1.5rem;
+    }
+
+    .mis_habilidades .box{
+        background-color: var(--midPurple);
+        align-items: center;
+        min-width: 11rem;
+    }
+
+    .mis_habilidades p{
+        font-size: 16px;
+    }
+
+    .box h3{
+        display: flex;
+        justify-content: center;
+    }
+
+    .trabajos{
+        margin: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .trabajos > * {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .trabajos > h3{
+        margin-bottom: 0.2rem;
+    }
+
+    .trabajos p{
+        margin: 1rem;
+        font-size: 12px;
+        color: var(--semiGrey);
+        font-weight: 400px;
+    }
+
+    .trabajos .subsection{
+        font-size: 16px;
+        color: var(--almostGrey);
+        margin: 0rem;
+    }
+
+    .information{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .airbnb i{
+        color: var(--purple);
+        font-size: 6rem;
+    }
+
+    .portafolio > img{
+        max-width: fit-content;
+        object-fit: cover;
+    }
+    
+    .portafolio{
+        margin: 1rem;
+        display: flex;
+        column-gap: 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+   .fotos-morochas{
+    display: block;
+    min-width: 5rem;
+   }
+
+    .fotos-morochas > * {
+        position: static;
+        margin-top: 1rem;
+    }
+
+    .contacto{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 90%;
+        text-align: center;
+        width: 40%;
+        margin: 1rem auto;
+    }
+
+    .contacto img{
+        border-radius: 50%;
+        padding: 2rem;
+        background-color: var(--midPurple);   
+    }
+
+    .contacto p{
+        color: var(--semiGrey);
+        font-weight: 400px;
+    }
+
+    .mensaje{
+        color: var(--purple);
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .corazon{
+        position: relative;
+        top: 0.2rem;
+    }
+
+    
+  /*--------------------------FIRST MOBILE--------------------------
+  ----------------------------FIRST MOBILE--------------------------*/
+
+@media screen and (max-width: 768px){
+    
+    .hamburguesa{
+        display: flex;
+    }
+
+    .container1{
+        flex-direction: column-reverse;
+        height: 100%;
+        position: relative;
+    }
+    
+    .description{
+        justify-content: space-between;
+        height: 60%;
+    }
+
+    .mini-container{
+        top: 21rem;
+        position:relative;
+    }
+    
+    .formita{
+        bottom: 6rem;
+    }
+
+    .contenedor_background{
+        display: grid;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        background-color:white;
+    }
+
+    .nav_menu{
+        position: absolute;
+        top: 3rem;
+        display: flex;
+        right: 0;
+        height: calc(100vh -  3rem);
+        background-color:var(--purple);
+        min-height: calc(100vh - 3rem);
+        flex-direction: column;
+        text-align:center;
+        justify-content: space-evenly;
+        display: none;
+        z-index: 1;
+        width: 100vw;
+    }
+
+    .nav_menu.visible{
+        display: flex;
+    }
+
+    .nav_items{
+        list-style: none;
+    }
+
+    .nav_links{
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+
+    h1{
+        margin: 1rem;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    p{
+        margin: 1rem;
+        font-size: 20px;
+    }
+
+   .redes{
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    bottom: 28px;
+   }
+
+   .redes .icon{
+    padding: 0.4rem;
+    border-radius: 50%;
+   }
+   
+   .portafolio{
+    margin: 1rem;
+    display: block;
+   }
+   
+   .portafolio > img{
+    width: 100%;
+    object-fit: cover;
+   }
+
+   .portafolio > .fotos-morochas{
+    display: flex;
+    column-gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+   }
+
+
+
+   .fotos-morochas > *{
+    position: relative;
+    width: 46%;
+   }
+
+   .imagen_1{
+    bottom: 1rem;
+   }
+
+   .imagen_2{
+    top: 1rem;
+   }
+        
+    .foto{
+        width: 75vw;
+        text-align: center;
+        top: 0;
+        left:0;
+        right: 0;
+        bottom: 50px;
+        margin: auto;
+        position: relative;
+    }
+    .boton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--blue);
+        margin: 0 auto;
+        max-width: 80vw;
+    }
+
+    .mis_habilidades{
+        column-gap: 0.5rem;
+        overflow-x: auto;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mis_habilidades .box{
+        min-width: 15rem;
+    }
+    
+    .box h3{
+        justify-content: space-evenly;
+    }
+
+    .trabajos{
+        display: block;
+    }
+    
+    .trabajos .airbnb{
+        margin-top: 3rem;
+    }
+
+    .trabajos .google{
+        margin-top: 3rem;
+    }
+
+    .airbnb i{
+        color: var(--purple);
+        font-size: 6rem;
+    }
+
+    .contacto{
+        justify-content: center;
+    }
+
+    .corazon{
+        position: relative;
+        top: 0.2rem;
+    }
+
+}
